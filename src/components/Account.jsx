@@ -94,7 +94,7 @@ const Account = ({}) => {
         </div>
       ) : (
         <div class=" w-full h-full center items-center text-slate-100 flex justify-between">
-          <div class="ml-36 pb-24">
+          <div class="ml-36 pb-24 flex flex-col">
             <h1 class="font-bold text-3xl mb-3">Login: </h1>
             <input
               type="text"
@@ -124,11 +124,12 @@ const Account = ({}) => {
 
             <div>
               {input === "Error" ? (
-                <span class="font-medium">Error Logging in</span>
+                <span class="font-medium mt-3 font-italics">
+                  Error Logging in
+                </span>
               ) : (
                 <div>
-                  <span className="font-bold">{input} </span>
-                  <span className="font-medium">logged in</span>
+                  <span className="font-bold mt-3">{input} </span>
                 </div>
               )}
             </div>
