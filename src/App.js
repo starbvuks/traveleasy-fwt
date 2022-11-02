@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Landing from "./components/Landing";
 import Account from "./components/Account";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             </div>
           }
         />
-        <Route path="services" element={<Landing />}></Route>
+        <Route path="services" element={<Services />}></Route>
         <Route
           path="account"
           element={

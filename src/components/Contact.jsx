@@ -23,6 +23,7 @@ const Contact = () => {
     axios
       .post("http://localhost/travel-easy/src/components/connect.php/", inputs)
       .then(function (response) {
+        console.log(inputs);
         alert(response.data);
       });
   };
